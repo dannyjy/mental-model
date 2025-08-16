@@ -3,7 +3,7 @@ const wordList = document.getElementById('wordList');
 const string = paragraph.textContent;
 
 const findMost = (str) => {
-    const strArr = str.replaceAll(',','').replaceAll('.','').replaceAll('\n','').toLowerCase().split(" ");
+    const strArr = str.replace(/[.,]/g, "").replaceAll('\n','').toLowerCase().split(" ");
     const obj = {};
     let count = 0;
     const uniqeStr = [...new Set(strArr)]
@@ -22,6 +22,7 @@ const findMost = (str) => {
     return sorted.splice(0,12)
 }
 
+console.log(findMost(string))
 const strArr = findMost(string)
 strArr.filter((str) => {
     wordList.innerHTML += `<li>${str}</li>`

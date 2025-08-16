@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.main{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 20px 20px #d1d1d16a;
+    
+    #timer-section{
+        gap: 1rem;
+        display: flex;
+        padding: 2rem;
+        border-radius: 1rem;
+        align-items: center;
+        background-color: #f0f8ff;
+        justify-content: space-between;
+
+        #timer{
+            gap: .5rem;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            padding: 1rem;
+            color: #544735;
+            border-radius: 50%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: antiquewhite;            
+
+            p:nth-child(1){
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            p:nth-child(2){
+                font-size: 2.8rem;
+                font-weight: 600;
+            }
+        }
+
+        .t-cal{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            cursor: pointer;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .t-cal:hover{
+            background-color: antiquewhite;
+        }
+    }
+
+    #timer-btns{
+        display: flex;
+        padding-top: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        
+        .btns{
+            gap: 2rem;
+            display: flex;
+            border-radius: 1rem;
+            align-items: center;
+            padding: 1.1rem 7rem;
+            justify-content: center;
+            /* box-shadow: 5px 15px 20px #d1d1d16a; */
+
+            .fun-btn{
+                gap: .2rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+                .low-btn{
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.img-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;;
+}
